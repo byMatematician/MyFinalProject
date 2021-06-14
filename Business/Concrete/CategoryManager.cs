@@ -21,9 +21,11 @@ namespace Business.Concrete
         public List<Category> GetAll()
         {
 
+            // Is kodlari
+
             return _categoryDal.GetAll();
         }
-
+        // select * from Categories where CategoryId = (3)
         public Category GetById(int categoryId)
         {
             return _categoryDal.Get(c => c.CategoryId == categoryId);
